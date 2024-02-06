@@ -1,0 +1,580 @@
+ /* Article container styling, mirroring the FAQ style for coherence */
+
+ body {
+    background-color: #f8f8f8;
+    color: #1e1e1f; /* Set text color to white for better visibility on a dark background */  
+}
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+.topnav {
+    overflow: hidden;
+    background-color: #1e1e1f;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    scroll-margin-block: 10px;
+    position:sticky;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #f8f8f8;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #fecd68;
+    color: #1e1e1f;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 450px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Ensure the line starts from the left edge */
+    height: 2px;
+    width: 0; /* Initially set width to 0 */
+    background-color: #fecd68;
+    transition: width 0.3s ease; /* Add transition for smooth animation */
+}
+.article-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.article-container h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.article-container h1:hover {
+    color: #737373; /* Red color when hovered */
+}
+
+.article-container h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    background: #fecd68;
+    color: #1e1e1f;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-weight: bold;
+    
+}
+
+.article-container h3 {
+    font-size: 24px;
+    margin-bottom: -40px;
+    padding: 15px 20px;
+    background: #ffffff;
+    color: #2d3748;
+    border-radius: 6px;
+    padding-bottom: -12px;
+}
+
+.article-section p {
+    padding: 20px;
+    background: #f8f8f8;
+    color: #2d3748;
+    line-height: 1.6;
+    border-left: 3px solid #f8f8f8;
+    border-radius: 6px;
+}
+
+@media (max-width: 450px) {
+    .article-container {
+        padding: 10px;
+    }
+
+    .article-container h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .article-container h2 {
+        font-size: 24px;
+        padding: 10px 15px;
+    }
+
+    .article-container h3 {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .article-section p {
+        padding: 15px;
+    }
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', 'Roboto', 'Open Sans', sans-serif;
+    background: #f8f8f8;
+    /* Pure white to make the #fecd68 pop */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft outer shadow for depth */
+    transition: .7s ease;
+    border-radius: 6px;
+}
+
+.faq-container h2 {
+    text-align: center;
+    color: #1e1e1f;
+    /* A darker shade of #fecd68 for the heading */
+    margin-bottom: 30px;
+    font-size: 28px;
+    transition: .7s ease;
+    font-weight: bold;
+    font-weight: bold;
+}
+
+.faq-question {
+    margin-bottom: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: .7s ease;
+}
+
+.faq-question h3 {
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0;
+    padding: 15px 20px;
+    background: #fecd68;
+    /* A vibrant, light #fecd68 */
+    color: #1e1e1f;
+    /* White text for contrast */
+    position: relative;
+    /* Needed for absolute positioning of the icon */
+    transition: background-color 0.3s ease;
+    transition: .7s ease;
+}
+
+.faq-question h3:hover,
+.faq-question h3.active {
+    background: #fecd68;
+    /* A slightly darker #fecd68 on hover/active for depth */
+}
+
+.faq-question h3::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Align correctly in the center vertically */
+    font-weight: bold;
+    color: #1e1e1f;
+    /* White for the icon to stand out */
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.faq-question h3.active::after {
+    content: '−';
+    /* Using the minus character for cross-browser consistency */
+    transform: translateY(-50%) rotate(180deg);
+    transition: .7s ease;
+}
+
+.faq-answer {
+    display: none;
+    padding: 20px;
+    color: #2d3748;
+    /* A soft dark shade for the text, ensuring good readability */
+    line-height: 1.6;
+    background: #ffe8a4;
+    /* The lightest #fecd68 of the bunch for a subtle look */
+    border-top: 1px solid #ffdb70;
+    /* A color that's in between the dark and vibrant #fecd68s */
+    transition: .7s ease;
+}
+
+/* Active style for the answer */
+.faq-answer.active {
+    display: block;
+}
+
+/* Smooth transitioning */
+.faq-answer,
+.faq-question h3,
+.faq-question h3::after {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style for the border-left of an FAQ answer when active */
+.faq-answer.active {
+    border-left: 3px solid #fecd68;
+    /* Matches the hover color for consistency */
+}
+
+/* General paragraph styling within a question */
+.faq-answer p {
+    margin-bottom: 10px;
+}
+
+/* Last child paragraph spacing in answer */
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 750px;
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    /* Center the map */
+    color: #333;
+
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    /* Adjust the height as needed */
+    border-radius: 10px;
+}
+
+.blog-banner-box {
+    text-align: center;
+}
+
+@media (min-width: 450px) {
+    .blog-banner-box {
+        height: auto;
+    }
+}
+
+
+.image-container img {
+    display: inline-block;
+    max-width: 750px;
+    border-radius: 10px;
+}
+
+.p1 {
+    margin-top: -50px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.content-wrapper {
+    height: 100%;
+    width: 100%;
+    max-width: 100rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+h1 {
+    margin-bottom: calc(0.7rem + 0.5vmin);
+    font-size: calc(2.3rem + 1vmin);
+}
+
+.blue-line {
+    height: 0.3rem;
+    width: 6rem;
+    background-color: #fecd68;
+    margin-bottom: calc(3rem + 2vmin);
+}
+
+.wrapper-for-arrows {
+    position: relative;
+    width: 70%;
+    border-radius: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.review-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: calc(2rem + 1vmin);
+    width: 100%;
+}
+
+#imgDiv {
+    border-radius: 50%;
+    width: calc(6rem + 4vmin);
+    height: calc(6rem + 4vmin);
+    position: relative;
+    box-shadow: 5px -3px #fecd68;
+    background-size: cover;
+    margin-bottom: calc(0.7rem + 0.5vmin);
+}
+
+.chicken {
+    background-image: url("https://media0.giphy.com/media/A8Cdznswn5vnG/200w.gif?cid=790b7611e8c5980ee7141bc18ec12c49962b871eb404ba5b&rid=200w.gif&ct=s");
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 12%;
+}
+
+#imgDiv::after {
+    content: "''";
+    font-size: calc(2rem + 2vmin);
+    font-family: sans-serif;
+    line-height: 150%;
+    color: #f8f8f8;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #fecd68;
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    width: calc(2rem + 2vmin);
+    height: calc(2rem + 2vmin);
+}
+
+#personName {
+    margin-bottom: calc(0.7rem + 0.5vmin);
+    font-size: calc(1rem + 0.5vmin);
+    letter-spacing: calc(0.1rem + 0.1vmin);
+    font-weight: bold;
+}
+
+#profession {
+    font-size: calc(0.8rem + 0.3vmin);
+    margin-bottom: calc(0.7rem + 0.5vmin);
+    color: #fecd68;
+}
+
+#description {
+    font-size: calc(0.8rem + 0.3vmin);
+    width: 70%;
+    max-width: 40rem;
+    text-align: center;
+    margin-bottom: calc(1.4rem + 1vmin);
+    color: rgb(92, 92, 92);
+    line-height: 2rem;
+}
+
+.arrow-wrap {
+    position: absolute;
+    top: 50%;
+}
+
+.arrow {
+    width: calc(1.4rem + 0.6vmin);
+    height: calc(1.4rem + 0.6vmin);
+    border: solid #fecd68;
+    border-width: 0 calc(0.5rem + 0.2vmin) calc(0.5rem + 0.2vmin) 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.arrow:hover {
+    transition: 0.3s;
+    transform: scale(1.15);
+}
+
+.left-arrow-wrap {
+    left: 5%;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.right-arrow-wrap {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 5%;
+}
+
+
+@keyframes moveHead {
+    0% {}
+
+    25% {
+        transform: translate(0.5rem, 1rem) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(-5deg);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content-wrapper {
+        width: 100%;
+    }
+}
